@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_rounded"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        style="@style/FitDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_title" />
+
+    <TextView
+        style="@style/FitDialogSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/register_subtitle" />
+
+    <TextView
+        style="@style/FitFieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_account" />
+
+    <EditText
+        android:id="@+id/etRegAccount"
+        style="@style/FitInput"
+        android:hint="@string/hint_account"
+        android:imeOptions="actionNext"
+        android:inputType="text" />
+
+    <TextView
+        style="@style/FitFieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_password" />
+
+    <EditText
+        android:id="@+id/etRegPassword"
+        style="@style/FitInput"
+        android:hint="@string/hint_password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword" />
+
+    <TextView
+        style="@style/FitFieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_security_question" />
+
+    <EditText
+        android:id="@+id/etRegQuestion"
+        style="@style/FitInput"
+        android:hint="@string/hint_security_question"
+        android:imeOptions="actionNext"
+        android:inputType="text" />
+
+    <TextView
+        style="@style/FitFieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_security_answer" />
+
+    <EditText
+        android:id="@+id/etRegAnswer"
+        style="@style/FitInput"
+        android:hint="@string/hint_security_answer"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnDialogCancel"
+            style="@style/FitDialogButton.Cancel"
+            android:text="@string/action_cancel" />
+
+        <TextView
+            android:id="@+id/btnDialogConfirm"
+            style="@style/FitDialogButton"
+            android:layout_marginLeft="8dp"
+            android:text="@string/action_register" />
+    </LinearLayout>
+</LinearLayout>
